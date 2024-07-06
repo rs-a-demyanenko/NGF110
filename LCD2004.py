@@ -48,8 +48,8 @@ class LCD2004:
             # Смещение пунктов меню вниз
             self.display_menu()
 
-lcd = LCD2004(i2c, address=0x27)
-lcd.menu_items = ['Пункт 1', 'Пункт 2', 'Пункт 3', 'Пункт 4', 'Пункт 5']
-lcd.display_menu()  # Отображение меню
-lcd.menu_down()     # Перемещение вниз по меню
-lcd.menu_up()       # Перемещение вверх по меню
+# lcd = LCD2004(i2c, address=0x27)
+# lcd.menu_items = ['Пункт 1', 'Пункт 2', 'Пункт 3', 'Пункт 4', 'Пункт 5']
+# lcd.display_menu()    Отображение меню
+# lcd.menu_down()       Перемещение вниз по меню
+# lcd.menu_up()         Перемещение вверх по меню

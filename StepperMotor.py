@@ -42,7 +42,7 @@ class StepperMotor:
         return self.position
 
 # Пример использования:
-motor = StepperMotor(step_pin=18, dir_pin=19, steps_per_mm=100, acceleration=0.1)
-motor.set_limits(0, 200)
-motor.move(50, 5)
-print("Текущее положение двигателя:", motor.get_position())
+# motor = StepperMotor(step_pin=18, dir_pin=19, steps_per_mm=100, acceleration=0.1)
+# motor.set_limits(0, 200)
+# motor.move(50, 5)
+# print("Текущее положение двигателя:", motor.get_position())

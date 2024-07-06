@@ -18,12 +18,12 @@ class TripleStepperController(DualStepperController):
             self.motor_z.move(self.distance_between_passes_z * direction, speed_z)
 
 # Пример использования:
-motor_x = StepperMotor(step_pin=18, dir_pin=19, steps_per_mm=100, acceleration=0.1)
-motor_y = StepperMotor(step_pin=23, dir_pin=22, steps_per_mm=100, acceleration=0.1)
-motor_z = StepperMotor(step_pin=27, dir_pin=26, steps_per_mm=100, acceleration=0.1)
-motor_x.set_limits(0, 300)  # Установка лимитов для оси X
-motor_y.set_limits(0, 200)  # Установка лимитов для оси Y
-motor_z.set_limits(0, 100)  # Установка лимитов для оси Z
+# motor_x = StepperMotor(step_pin=18, dir_pin=19, steps_per_mm=100, acceleration=0.1)
+# motor_y = StepperMotor(step_pin=23, dir_pin=22, steps_per_mm=100, acceleration=0.1)
+# motor_z = StepperMotor(step_pin=27, dir_pin=26, steps_per_mm=100, acceleration=0.1)
+# motor_x.set_limits(0, 300)  # Установка лимитов для оси X
+# motor_y.set_limits(0, 200)  # Установка лимитов для оси Y
+# motor_z.set_limits(0, 100)  # Установка лимитов для оси Z
 
-controller = TripleStepperController(motor_x, motor_y, motor_z, 10, 5, 3)
-controller.perform_passes(speed_xy=5, speed_z=2, num_passes_xy=5, primary_direction='x')
+# controller = TripleStepperController(motor_x, motor_y, motor_z, 10, 5, 3)
+# controller.perform_passes(speed_xy=5, speed_z=2, num_passes_xy=5, primary_direction='x')
